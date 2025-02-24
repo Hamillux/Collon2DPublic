@@ -1,0 +1,5 @@
+#define CLN2D_REPLACE_INT(x) 0
+#define CLN2D_REPLACE_BOOL(x) false
+#define CLN2D_REPLACE_FLOAT(x) 0.0
+#define CLN2D_REPLACE_CHAR(x) '\0'
+#define CLN2D_REPLACE_STRING(x) ""
