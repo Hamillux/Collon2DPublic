@@ -1,0 +1,923 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{eaa25ed9-6a21-4ff6-ab39-58cee6d95078}</ProjectGuid>
+    <RootNamespace>EngineerBootCampFramework</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Collon2D</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <IntDir>$(SolutionDir)Intermediate\$(Platform)$(Configuration)</IntDir>
+    <CustomBuildAfterTargets>
+    </CustomBuildAfterTargets>
+    <CustomBuildBeforeTargets>
+    </CustomBuildBeforeTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CustomBuildAfterTargets>
+    </CustomBuildAfterTargets>
+    <CustomBuildBeforeTargets>
+    </CustomBuildBeforeTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CustomBuildAfterTargets>
+    </CustomBuildAfterTargets>
+    <CustomBuildBeforeTargets>
+    </CustomBuildBeforeTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <CustomBuildAfterTargets>
+    </CustomBuildAfterTargets>
+    <CustomBuildBeforeTargets>
+    </CustomBuildBeforeTargets>
+    <IntDir>$(SolutionDir)Intermediate\$(Platform)$(Configuration)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnabled>false</VcpkgEnabled>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)/imgui/backends/;$(ProjectDir)/imgui/;$(ProjectDir)Source\;Dxlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>Dxlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <CustomBuild>
+      <Command>python $(ProjectDir)scripts\code_generator.py %(FullPath) %(RelativeDir)%(Filename)_generated%(Extension) shift-jis</Command>
+    </CustomBuild>
+    <CustomBuild>
+      <Message>$(ProjectDir)\scripts\code_generator.py: Generating code...</Message>
+    </CustomBuild>
+    <CustomBuild>
+      <Outputs>%(RelativeDir)%(Filename)_generated%(Extension)</Outputs>
+      <AdditionalInputs>%(RelativeDir)%(Filename)%(Extension).gen.xml</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)/imgui/backends/;$(ProjectDir)/imgui/;$(ProjectDir)Source\;Dxlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>Dxlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <CustomBuild>
+      <Command>python $(ProjectDir)scripts\code_generator.py %(FullPath) %(RelativeDir)%(Filename)_generated%(Extension) shift-jis</Command>
+    </CustomBuild>
+    <CustomBuild>
+      <Message>$(ProjectDir)\scripts\code_generator.py: Generating code...</Message>
+    </CustomBuild>
+    <CustomBuild>
+      <Outputs>%(RelativeDir)%(Filename)_generated%(Extension)</Outputs>
+      <AdditionalInputs>%(RelativeDir)%(Filename)%(Extension).gen.xml</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)/imgui/backends/;$(ProjectDir)/imgui/;$(ProjectDir)Source\;$(SolutionDir)libs\Dxlib\include;$(SolutionDir)libs\nlohmann-json\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)libs\Dxlib\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>imm32.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <CustomBuild>
+      <Command>python $(ProjectDir)scripts\code_generator.py %(FullPath) %(RelativeDir)%(Filename)_generated%(Extension) shift-jis</Command>
+    </CustomBuild>
+    <CustomBuild>
+      <Message>$(ProjectDir)\scripts\code_generator.py: Generating code...</Message>
+    </CustomBuild>
+    <CustomBuild>
+      <Outputs>%(RelativeDir)%(Filename)_generated%(Extension)</Outputs>
+      <AdditionalInputs>%(RelativeDir)%(Filename)%(Extension).gen.xml</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)/imgui/backends/;$(ProjectDir)/imgui/;$(ProjectDir)Source\;$(SolutionDir)libs\Dxlib\include;$(SolutionDir)libs\nlohmann-json\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)libs\Dxlib\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <CustomBuild>
+      <Command>python $(ProjectDir)scripts\code_generator.py %(FullPath) %(RelativeDir)%(Filename)_generated%(Extension) shift-jis</Command>
+    </CustomBuild>
+    <CustomBuild>
+      <Message>$(ProjectDir)\scripts\code_generator.py: Generating code...</Message>
+    </CustomBuild>
+    <CustomBuild>
+      <Outputs>%(RelativeDir)%(Filename)_generated%(Extension)</Outputs>
+      <AdditionalInputs>%(RelativeDir)%(Filename)%(Extension).gen.xml</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="imgui\backends\imgui_impl_dx11.cpp" />
+    <ClCompile Include="imgui\backends\imgui_impl_win32.cpp" />
+    <ClCompile Include="imgui\imgui.cpp" />
+    <ClCompile Include="imgui\imgui_demo.cpp" />
+    <ClCompile Include="imgui\imgui_draw.cpp" />
+    <ClCompile Include="imgui\imgui_tables.cpp" />
+    <ClCompile Include="imgui\imgui_widgets.cpp" />
+    <ClCompile Include="source\Actor\Actor.cpp" />
+    <ClCompile Include="source\Actor\ActorFactory.cpp" />
+    <ClCompile Include="source\Actor\ActorInitialParams.cpp" />
+    <ClCompile Include="source\Actor\ActorParamTypes.cpp" />
+    <ClCompile Include="source\Actor\Character\Character.cpp" />
+    <ClCompile Include="source\Actor\Character\CharacterInitialParams.cpp" />
+    <ClCompile Include="source\Actor\Character\Enemy\EnemyBase.cpp" />
+    <ClCompile Include="source\Actor\Character\Enemy\EnemyBaseInitialParams.cpp" />
+    <ClCompile Include="source\Actor\Character\Enemy\FlyingEnemy.cpp" />
+    <ClCompile Include="source\Actor\Character\Enemy\FlyingEnemyInitialParams.cpp" />
+    <ClCompile Include="source\Actor\Character\Enemy\TacklingEnemy.cpp" />
+    <ClCompile Include="source\Actor\Character\Enemy\ThrowingEnemy.cpp" />
+    <ClCompile Include="source\Actor\Character\Enemy\WalkingEnemy.cpp" />
+    <ClCompile Include="source\Actor\Character\Enemy\WalkingEnemyInitialParams.cpp" />
+    <ClCompile Include="source\Actor\Character\Player\Player.cpp" />
+    <ClCompile Include="source\Actor\Character\Player\PlayerAnimState.cpp" />
+    <ClCompile Include="source\Actor\Character\Player\PlayerInitialParams.cpp" />
+    <ClCompile Include="source\Actor\Character\Player\States\PlayerState_Dead.cpp" />
+    <ClCompile Include="source\Actor\Character\Player\States\PlayerState_Emerging.cpp" />
+    <ClCompile Include="source\Actor\Character\Player\States\PlayerState_Goaled.cpp" />
+    <ClCompile Include="source\Actor\Character\Player\States\PlayerState_Playing.cpp" />
+    <ClCompile Include="source\Actor\Mapchip\Block\BlockBase.cpp" />
+    <ClCompile Include="source\Actor\Mapchip\Block\BlockInitialParams.cpp" />
+    <ClCompile Include="source\Actor\Mapchip\Block\BlockTexturing.cpp" />
+    <ClCompile Include="source\Actor\Mapchip\Block\RectangleBlock\RectangleBlock.cpp" />
+    <ClCompile Include="source\Actor\Mapchip\Block\RectangleBlock\RectangleBlockInitialParams.cpp" />
+    <ClCompile Include="source\Actor\Mapchip\Block\SlopeBlock\SlopeBlock.cpp" />
+    <ClCompile Include="source\Actor\Mapchip\Block\SlopeBlock\SlopeBlockInitialParams.cpp" />
+    <ClCompile Include="source\Actor\Mapchip\Gimmick\Coin.cpp" />
+    <ClCompile Include="source\Actor\Mapchip\Gimmick\CrackedBrick.cpp" />
+    <ClCompile Include="source\Actor\Mapchip\Gimmick\GoalFlag.cpp" />
+    <ClCompile Include="source\Actor\Mapchip\Gimmick\GoalFlagInitialParams.cpp" />
+    <ClCompile Include="source\Actor\Mapchip\Item\ItemActor.cpp" />
+    <ClCompile Include="source\Actor\Mapchip\Item\ItemInitialParams.cpp" />
+    <ClCompile Include="source\Actor\Projectile\MagicProjectile\MagicProjectile.cpp" />
+    <ClCompile Include="source\Actor\Projectile\ProjectileBase.cpp" />
+    <ClCompile Include="source\Actor\SceneAnimRendererActor.cpp" />
+    <ClCompile Include="source\Component\CharacterMovementComponent.cpp" />
+    <ClCompile Include="source\Component\Collider\BoxCollider.cpp" />
+    <ClCompile Include="source\Component\Collider\ColliderBase.cpp" />
+    <ClCompile Include="source\Component\Collider\HitResult.cpp" />
+    <ClCompile Include="source\Component\Collider\SegmentCollider.cpp" />
+    <ClCompile Include="source\Component\Collider\TriangleCollider.cpp" />
+    <ClCompile Include="source\Component\ComponentBase.cpp" />
+    <ClCompile Include="source\Component\EmitterComponent.cpp" />
+    <ClCompile Include="source\Component\MovementComponent.cpp" />
+    <ClCompile Include="source\Component\ProjectileMovementComponent.cpp" />
+    <ClCompile Include="source\Component\Renderer\Animator\PlayerAnimatorComponent.cpp" />
+    <ClCompile Include="source\Component\Renderer\Animator\TacklingEnemyAnimatorComponent.cpp" />
+    <ClCompile Include="source\Component\Renderer\Animator\WalkingEnemyAnimatorComponent.cpp" />
+    <ClCompile Include="source\Component\Renderer\RendererComponent.cpp" />
+    <ClCompile Include="source\Component\SceneComponent.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Character\Enemy\EnemyBaseInitialParams.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Character\Enemy\FlyingEnemy.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Character\Enemy\FlyingEnemyInitialParams.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Character\Enemy\TacklingEnemy.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Character\Enemy\ThrowingEnemy.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Character\Enemy\WalkingEnemyInitialParams.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Character\Player\Player.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Mapchip\Gimmick\CrackedBrick.cpp" />
+    <ClCompile Include="source\SceneObject\Component\Renderer\Animator\PlayerAnimatorComponent.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Character\Player\PlayerAnimState.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Character\Player\States\PlayerState_Dead.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Character\Player\States\PlayerState_Emerging.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Character\Player\States\PlayerState_Goaled.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Character\Player\States\PlayerState_Playing.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\EntityTraits.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\ActorFactory.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\ActorInitialParams.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\ActorParamTypes.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Character\Player\PlayerInitialParams.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Mapchip\Block\BlockBase.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Mapchip\Block\BlockInitialParams.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Mapchip\Block\BlockTexturing.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Mapchip\Block\RectangleBlock\RectangleBlockInitialParams.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Mapchip\Block\SlopeBlock\SlopeBlock.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Mapchip\Block\SlopeBlock\SlopeBlockInitialParams.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Mapchip\Gimmick\Coin.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Mapchip\Gimmick\GoalFlagInitialParams.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Mapchip\Item\ItemInitialParams.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Character\CharacterInitialParams.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Mapchip\Block\RectangleBlock\RectangleBlock.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Projectile\MagicProjectile\MagicProjectile.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Projectile\ProjectileBase.cpp" />
+    <ClCompile Include="source\SceneObject\Component\CharacterMovementComponent.cpp" />
+    <ClCompile Include="source\SceneObject\Component\Collider\BoxCollider.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Character\Character.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Character\Enemy\EnemyBase.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Character\Enemy\WalkingEnemy.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Actor.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Mapchip\Gimmick\GoalFlag.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\Mapchip\Item\ItemActor.cpp" />
+    <ClCompile Include="source\SceneObject\Component\Collider\ColliderBase.cpp" />
+    <ClCompile Include="source\SceneObject\Component\Collider\SegmentCollider.cpp" />
+    <ClCompile Include="source\SceneObject\Component\Collider\TriangleCollider.cpp" />
+    <ClCompile Include="source\SceneObject\Component\ComponentBase.cpp" />
+    <ClCompile Include="source\SceneObject\Component\EmitterComponent.cpp" />
+    <ClCompile Include="source\SceneObject\Component\Renderer\Animator\TacklingEnemyAnimatorComponent.cpp" />
+    <ClCompile Include="source\SceneObject\Component\Renderer\Animator\WalkingEnemyAnimatorComponent.cpp" />
+    <ClCompile Include="source\SceneObject\Component\Renderer\RendererComponent.cpp" />
+    <ClCompile Include="source\SceneObject\Component\ProjectileMovementComponent.cpp" />
+    <ClCompile Include="source\SceneObject\Component\MovementComponent.cpp" />
+    <ClCompile Include="source\GameObject.cpp" />
+    <ClCompile Include="source\SceneObject\SceneObject.cpp" />
+    <ClCompile Include="source\SceneObject\Component\SceneComponent.cpp" />
+    <ClCompile Include="source\SceneObject\Actor\SceneAnimRendererActor.cpp" />
+    <ClCompile Include="Source\GameSystems\FontManager.cpp" />
+    <ClCompile Include="Source\GameSystems\GameConfig\GameConfig.cpp" />
+    <ClCompile Include="Source\GameSystems\GameConfig\internal\GameConfigItem.cpp" />
+    <ClCompile Include="Source\GameSystems\GameConfig\internal\StageEditorConfig.cpp" />
+    <ClCompile Include="Source\GameSystems\GraphicResourceManager\GraphResourceManager.cpp" />
+    <ClCompile Include="Source\GameSystems\MasterData\internal\MasterData.cpp" />
+    <ClCompile Include="Source\GameSystems\MasterData\internal\MasterDataHelper.cpp" />
+    <ClCompile Include="Source\GameSystems\MasterData\internal\MdEntity.cpp" />
+    <ClCompile Include="Source\GameSystems\MasterData\internal\MdGameIcon.cpp" />
+    <ClCompile Include="Source\GameSystems\MasterData\internal\MdItem.cpp" />
+    <ClCompile Include="Source\GameSystems\ParticleManager\ParticleManager.cpp" />
+    <ClCompile Include="Source\GameSystems\ParticleManager\ParticleManagerImpl.cpp" />
+    <ClCompile Include="Source\GameSystems\ParticleManager\Particle\Particle.cpp" />
+    <ClCompile Include="Source\GameSystems\ParticleManager\Particle\ParticleSpawnDesc.cpp" />
+    <ClCompile Include="Source\GameSystems\ParticleManager\TextureLoader\SpriteTextureInfo.cpp" />
+    <ClCompile Include="Source\GameSystems\ParticleManager\TextureLoader\TextureLoader.cpp" />
+    <ClCompile Include="Source\GameSystems\Sound\SoundInstance.cpp" />
+    <ClCompile Include="Source\GameSystems\Sound\SoundManager.cpp" />
+    <ClCompile Include="Source\GameSystems\SystemTimer.cpp" />
+    <ClCompile Include="Source\Input\DeviceInput.cpp" />
+    <ClCompile Include="Source\Main.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)Generated\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)Generated\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)Generated\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)Generated\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="source\GameSystems\CollisionManager.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\InGameScene\InGameScene.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\InGameScene\InGameSceneStateStack.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\InGameScene\States\InGameSceneState.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\InGameScene\States\InGameSceneState_GameOver.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\InGameScene\States\InGameSceneState_Paused.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\InGameScene\States\InGameSceneState_Playing.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\InGameScene\States\InGameSceneState_StageCleared.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\SpawnActorInfo.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\StageEditorScene\States\StageEditorSceneState_EditStageBGM.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\StageEditorScene\States\StageEditorSceneState_ResizeStage.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\Stage\internal\StageBGInfo.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\Stage\internal\StageId.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\Stage\internal\StageJson.cpp" />
+    <ClCompile Include="Source\Scene\SceneBase.cpp" />
+    <ClCompile Include="Source\Scene\SceneManager.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\StageEditorScene\EditorCommand\EditorCommands.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\StageEditorScene\EditorMessageManager.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\StageEditorScene\ParameterEditing\ParamEditComponent\ParamEditNode.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\StageEditorScene\StageEditorColor.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\StageEditorScene\StageEditorScene.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\StageEditorScene\ParameterEditing\ParamEditComponent\ParamEditGroup.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\StageEditorScene\States\StageEditorSceneState.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\StageEditorScene\States\StageEditorSceneState_Edit.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\StageEditorScene\States\StageEditorSceneState_EditorSettings.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\StageEditorScene\States\StageEditorSceneState_EditStageBg.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\StageEditorScene\States\StageEditorSceneState_Edit_Move.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\StageEditorScene\States\StageEditorSceneState_Edit_Summon.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\StageEditorScene\States\StageEditorSceneState_Edit_Modify.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\StageEditorScene\States\StageEditorSceneState_Paused.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\StageEditorScene\States\StageEditorSceneState_StageSettings.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\StageEditorScene\States\StageEditorSceneState_ThumbnailShooting.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\StageInteractiveScene.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\StagePerimeterColliderHolder.cpp" />
+    <ClCompile Include="Source\Scene\StageSelectScene\StageSelectScene.cpp" />
+    <ClCompile Include="Source\Scene\TestScene\TestSceneImpl\TestSceneActor\ColliderHolder.cpp" />
+    <ClCompile Include="Source\Scene\TestScene\TestSceneImpl\TestSceneActor\ColliderHolderInitialParams.cpp" />
+    <ClCompile Include="Source\Scene\TestScene\TestSceneImpl\TestSceneImplBase.cpp" />
+    <ClCompile Include="Source\Scene\TestScene\TestSceneImpl\TestSceneImpl_1.cpp" />
+    <ClCompile Include="Source\Scene\TestScene\TestSceneImpl\TestSceneImpl_2.cpp" />
+    <ClCompile Include="Source\Scene\TestScene\TestSceneImpl\TestSceneImpl_3.cpp" />
+    <ClCompile Include="Source\Scene\TestScene\TestSceneImpl\TestSceneImpl_4.cpp" />
+    <ClCompile Include="Source\Scene\TestScene\TestSelectScene.cpp" />
+    <ClCompile Include="Source\Scene\TitleScene\TitleScene.cpp" />
+    <ClCompile Include="Source\Scene\TestScene\TestScene.cpp" />
+    <ClCompile Include="Source\SystemTypes.cpp" />
+    <ClCompile Include="Source\Utility\Command\CommandBase.cpp" />
+    <ClCompile Include="Source\Utility\Core\DxLibExtension.cpp" />
+    <ClCompile Include="Source\Utility\Core\Math\Transform.cpp" />
+    <ClCompile Include="Source\Utility\Core\RenderingCore.cpp" />
+    <ClCompile Include="source\Utility\Core\Rendering\CameraParams.cpp" />
+    <ClCompile Include="Source\Utility\Core\StringUtils.cpp" />
+    <ClCompile Include="Source\Utility\ImGui\internal\ImGuiExtensions.cpp" />
+    <ClCompile Include="Source\Utility\ImGui\internal\ImGuiUtil.cpp" />
+    <ClCompile Include="Source\Utility\Core\Math\MathUtil.cpp" />
+    <ClCompile Include="Source\Utility\Core\Rendering\DrawBlendInfo.cpp" />
+    <ClCompile Include="Source\Utility\Core\Rendering\DrawHelper.cpp" />
+    <ClCompile Include="source\SceneObject\Component\Collider\HitResult.cpp" />
+    <ClCompile Include="Source\Utility\Core\Math\GeometryUtility.cpp" />
+    <ClCompile Include="Source\Utility\Core\Math\Matrix3X3.cpp" />
+    <ClCompile Include="Source\Utility\Core\Math\RandomNumberGenerator.cpp" />
+    <ClCompile Include="Source\Utility\Core\Rendering\ScreenParams.cpp" />
+    <ClCompile Include="Source\Utility\UIElements\UIElements.cpp" />
+    <ClCompile Include="Source\Utility\Core\Math\Vector2D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="imgui\backends\imgui_impl_dx11.h" />
+    <ClInclude Include="imgui\backends\imgui_impl_win32.h" />
+    <ClInclude Include="imgui\imconfig.h" />
+    <ClInclude Include="imgui\imgui.h" />
+    <ClInclude Include="imgui\imgui_internal.h" />
+    <ClInclude Include="imgui\imstb_rectpack.h" />
+    <ClInclude Include="imgui\imstb_textedit.h" />
+    <ClInclude Include="imgui\imstb_truetype.h" />
+    <ClInclude Include="source\Actor\Actor.h" />
+    <ClInclude Include="source\Actor\ActorFactory.h" />
+    <ClInclude Include="source\Actor\ActorInitialParams.h" />
+    <ClInclude Include="source\Actor\ActorParamTypes.h" />
+    <ClInclude Include="source\Actor\ActorTraits.h" />
+    <ClInclude Include="source\Actor\AllActorsInclude_generated.h" />
+    <ClInclude Include="source\Actor\Character\Character.h" />
+    <ClInclude Include="source\Actor\Character\CharacterInitialParams.h" />
+    <ClInclude Include="source\Actor\Character\Enemy\EnemyBase.h" />
+    <ClInclude Include="source\Actor\Character\Enemy\EnemyBaseInitialParams.h" />
+    <ClInclude Include="source\Actor\Character\Enemy\FlyingEnemy.h" />
+    <ClInclude Include="source\Actor\Character\Enemy\FlyingEnemyInitialParams.h" />
+    <ClInclude Include="source\Actor\Character\Enemy\TacklingEnemy.h" />
+    <ClInclude Include="source\Actor\Character\Enemy\ThrowingEnemy.h" />
+    <ClInclude Include="source\Actor\Character\Enemy\WalkingEnemy.h" />
+    <ClInclude Include="source\Actor\Character\Enemy\WalkingEnemyInitialParams.h" />
+    <ClInclude Include="source\Actor\Character\Player\Player.h" />
+    <ClInclude Include="source\Actor\Character\Player\PlayerAnimState.h" />
+    <ClInclude Include="source\Actor\Character\Player\PlayerInitialParams.h" />
+    <ClInclude Include="source\Actor\Character\Player\PlayerStatesInclude.h" />
+    <ClInclude Include="source\Actor\Character\Player\States\PlayerState.h" />
+    <ClInclude Include="source\Actor\Character\Player\States\PlayerState_Dead.h" />
+    <ClInclude Include="source\Actor\Character\Player\States\PlayerState_Emerging.h" />
+    <ClInclude Include="source\Actor\Character\Player\States\PlayerState_Goaled.h" />
+    <ClInclude Include="source\Actor\Character\Player\States\PlayerState_Playing.h" />
+    <ClInclude Include="source\Actor\DamageInfo.h" />
+    <ClInclude Include="source\Actor\EntityTraits.h" />
+    <ClInclude Include="source\Actor\EntityType.h" />
+    <ClInclude Include="source\Actor\Mapchip\Block\BlockBase.h" />
+    <ClInclude Include="source\Actor\Mapchip\Block\BlockInitialParams.h" />
+    <ClInclude Include="source\Actor\Mapchip\Block\BlockTexturing.h" />
+    <ClInclude Include="source\Actor\Mapchip\Block\RectangleBlock\RectangleBlock.h" />
+    <ClInclude Include="source\Actor\Mapchip\Block\RectangleBlock\RectangleBlockInitialParams.h" />
+    <ClInclude Include="source\Actor\Mapchip\Block\SlopeBlock\SlopeBlock.h" />
+    <ClInclude Include="source\Actor\Mapchip\Block\SlopeBlock\SlopeBlockInitialParams.h" />
+    <ClInclude Include="source\Actor\Mapchip\Gimmick\Coin.h" />
+    <ClInclude Include="source\Actor\Mapchip\Gimmick\CrackedBrick.h" />
+    <ClInclude Include="source\Actor\Mapchip\Gimmick\GoalFlag.h" />
+    <ClInclude Include="source\Actor\Mapchip\Gimmick\GoalFlagInitialParams.h" />
+    <ClInclude Include="source\Actor\Mapchip\Item\ItemActor.h" />
+    <ClInclude Include="source\Actor\Mapchip\Item\ItemInitialParams.h" />
+    <ClInclude Include="source\Actor\Projectile\MagicProjectile\MagicProjectile.h" />
+    <ClInclude Include="source\Actor\Projectile\ProjectileBase.h" />
+    <ClInclude Include="source\Actor\Projectile\ProjectileInitialParams.h" />
+    <ClInclude Include="source\Actor\SceneAnimRendererActor.h" />
+    <ClInclude Include="source\Component\CharacterMovementComponent.h" />
+    <ClInclude Include="source\Component\Collider\BoxCollider.h" />
+    <ClInclude Include="source\Component\Collider\ColliderBase.h" />
+    <ClInclude Include="source\Component\Collider\CollisionType.h" />
+    <ClInclude Include="source\Component\Collider\HitResult.h" />
+    <ClInclude Include="source\Component\Collider\SegmentCollider.h" />
+    <ClInclude Include="source\Component\Collider\TriangleCollider.h" />
+    <ClInclude Include="source\Component\ComponentBase.h" />
+    <ClInclude Include="source\Component\EmitterComponent.h" />
+    <ClInclude Include="source\Component\MovementComponent.h" />
+    <ClInclude Include="source\Component\MovementMode.h" />
+    <ClInclude Include="source\Component\ProjectileMovementComponent.h" />
+    <ClInclude Include="source\Component\Renderer\Animator\AnimatorComponent.h" />
+    <ClInclude Include="source\Component\Renderer\Animator\FlyingEnemyAnimatorComponent.h" />
+    <ClInclude Include="source\Component\Renderer\Animator\PlayerAnimatorComponent.h" />
+    <ClInclude Include="source\Component\Renderer\Animator\TacklingEnemyAnimatorComponent.h" />
+    <ClInclude Include="source\Component\Renderer\Animator\ThrowingEnemyAnimatorComponent.h" />
+    <ClInclude Include="source\Component\Renderer\Animator\WalkingEnemyAnimatorComponent.h" />
+    <ClInclude Include="source\Component\Renderer\RendererComponent.h" />
+    <ClInclude Include="source\Component\SceneComponent.h" />
+    <ClInclude Include="Source\Core.h" />
+    <ClInclude Include="source\SceneObject\Actor\ActorFactory.h" />
+    <ClInclude Include="source\SceneObject\Actor\ActorInitialParams.h" />
+    <ClInclude Include="source\SceneObject\Actor\ActorTraits.h" />
+    <ClInclude Include="source\SceneObject\Actor\Character\Enemy\EnemyBaseInitialParams.h" />
+    <ClInclude Include="source\SceneObject\Actor\Character\Enemy\FlyingEnemy.h" />
+    <ClInclude Include="source\SceneObject\Actor\Character\Enemy\FlyingEnemyInitialParams.h" />
+    <ClInclude Include="source\SceneObject\Actor\Character\Enemy\TacklingEnemy.h" />
+    <ClInclude Include="source\SceneObject\Actor\Character\Enemy\ThrowingEnemy.h" />
+    <ClInclude Include="source\SceneObject\Actor\Character\Enemy\WalkingEnemyInitialParams.h" />
+    <ClInclude Include="source\SceneObject\Actor\DamageInfo.h" />
+    <ClInclude Include="source\SceneObject\Actor\Mapchip\Gimmick\CrackedBrick.h" />
+    <ClInclude Include="source\SceneObject\Component\Renderer\Animator\FlyingEnemyAnimatorComponent.h" />
+    <ClInclude Include="source\SceneObject\Component\Renderer\Animator\PlayerAnimatorComponent.h" />
+    <ClInclude Include="source\SceneObject\Actor\Character\Player\PlayerAnimState.h" />
+    <ClInclude Include="source\SceneObject\Actor\Character\Player\PlayerInitialParams.h" />
+    <ClInclude Include="source\SceneObject\Actor\Character\Player\PlayerStatesInclude.h" />
+    <ClInclude Include="source\SceneObject\Actor\Character\Player\States\PlayerState.h" />
+    <ClInclude Include="source\SceneObject\Actor\Character\Player\States\PlayerState_Dead.h" />
+    <ClInclude Include="source\SceneObject\Actor\Character\Player\States\PlayerState_Emerging.h" />
+    <ClInclude Include="source\SceneObject\Actor\Character\Player\States\PlayerState_Goaled.h" />
+    <ClInclude Include="source\SceneObject\Actor\Character\Player\States\PlayerState_Playing.h" />
+    <ClInclude Include="source\SceneObject\Actor\EntityTraits.h" />
+    <ClInclude Include="source\SceneObject\Actor\Mapchip\Block\BlockBase.h" />
+    <ClInclude Include="source\SceneObject\Actor\Mapchip\Block\BlockInitialParams.h" />
+    <ClInclude Include="source\SceneObject\Actor\Mapchip\Block\BlockTexturing.h" />
+    <ClInclude Include="source\SceneObject\Actor\Mapchip\Block\SlopeBlock\SlopeBlock.h" />
+    <ClInclude Include="source\SceneObject\Actor\ActorParamTypes.h" />
+    <ClInclude Include="source\SceneObject\Actor\Character\CharacterInitialParams.h" />
+    <ClInclude Include="source\SceneObject\Actor\Mapchip\Block\RectangleBlock\RectangleBlockInitialParams.h" />
+    <ClInclude Include="source\SceneObject\Actor\Mapchip\Block\RectangleBlock\RectangleBlock.h" />
+    <ClInclude Include="source\SceneObject\Actor\Mapchip\Block\SlopeBlock\SlopeBlockInitialParams.h" />
+    <ClInclude Include="source\SceneObject\Actor\Mapchip\Gimmick\Coin.h" />
+    <ClInclude Include="source\SceneObject\Actor\Mapchip\Gimmick\GoalFlagInitialParams.h" />
+    <ClInclude Include="source\SceneObject\Actor\Mapchip\Item\ItemInitialParams.h" />
+    <ClInclude Include="source\SceneObject\Actor\EntityType.h">
+      <SubType>EnumDefinition</SubType>
+    </ClInclude>
+    <ClInclude Include="source\SceneObject\Actor\Projectile\MagicProjectile\MagicProjectile.h" />
+    <ClInclude Include="source\SceneObject\Actor\Projectile\ProjectileBase.h" />
+    <ClInclude Include="source\SceneObject\Actor\Projectile\ProjectileInitialParams.h" />
+    <ClInclude Include="source\SceneObject\Component\CharacterMovementComponent.h" />
+    <ClInclude Include="source\SceneObject\Component\Collider\BoxCollider.h" />
+    <ClInclude Include="source\SceneObject\Actor\Character\Character.h" />
+    <ClInclude Include="source\SceneObject\Actor\Character\Enemy\EnemyBase.h" />
+    <ClInclude Include="source\SceneObject\Actor\Character\Enemy\WalkingEnemy.h" />
+    <ClInclude Include="source\SceneObject\Actor\Character\Player\Player.h" />
+    <ClInclude Include="source\SceneObject\Actor\Actor.h" />
+    <ClInclude Include="source\SceneObject\Actor\Mapchip\Gimmick\GoalFlag.h" />
+    <ClInclude Include="source\SceneObject\Component\Collider\ColliderBase.h" />
+    <ClInclude Include="source\SceneObject\Component\Collider\CollisionType.h" />
+    <ClInclude Include="source\SceneObject\Component\Collider\SegmentCollider.h" />
+    <ClInclude Include="source\SceneObject\Component\Collider\TriangleCollider.h" />
+    <ClInclude Include="source\SceneObject\Component\ComponentBase.h" />
+    <ClInclude Include="source\SceneObject\Component\EmitterComponent.h" />
+    <ClInclude Include="source\SceneObject\Component\MovementMode.h" />
+    <ClInclude Include="source\SceneObject\Component\Renderer\Animator\AnimatorComponent.h" />
+    <ClInclude Include="source\SceneObject\Component\Renderer\Animator\TacklingEnemyAnimatorComponent.h" />
+    <ClInclude Include="source\SceneObject\Component\Renderer\Animator\ThrowingEnemyAnimatorComponent.h" />
+    <ClInclude Include="source\SceneObject\Component\Renderer\Animator\WalkingEnemyAnimatorComponent.h" />
+    <ClInclude Include="source\SceneObject\Component\Renderer\RendererComponent.h" />
+    <ClInclude Include="source\SceneObject\Component\ProjectileMovementComponent.h" />
+    <ClInclude Include="source\SceneObject\Component\MovementComponent.h" />
+    <ClInclude Include="source\GameObject.h" />
+    <ClInclude Include="source\SceneObject\SceneObject.h" />
+    <ClInclude Include="source\SceneObject\Actor\SceneAnimRendererActor.h" />
+    <ClInclude Include="Source\GameSystems\FontManager.h" />
+    <ClInclude Include="Source\GameSystems\GameConfig\GameConfig.h" />
+    <ClInclude Include="Source\GameSystems\GameConfig\internal\GameConfigItem.h" />
+    <ClInclude Include="Source\GameSystems\GameConfig\internal\GameConfigItemsInclude.h" />
+    <ClInclude Include="Source\GameSystems\GameConfig\internal\StageEditorConfig.h" />
+    <ClInclude Include="Source\GameSystems\GameObjectManager.h" />
+    <ClInclude Include="source\SceneObject\Component\SceneComponent.h" />
+    <ClInclude Include="Source\GameSystems\MasterData\internal\MdStageBGM.h" />
+    <ClInclude Include="Source\GameSystems\MasterData\MasterDataInclude.h" />
+    <ClInclude Include="Source\GameSystems\MasterData\internal\MdFont.h" />
+    <ClInclude Include="Source\GameSystems\MasterData\internal\MdItem.h" />
+    <ClInclude Include="Source\GameSystems\Sound\SoundInstance.h" />
+    <ClInclude Include="Source\GameSystems\SystemTimer.h" />
+    <ClInclude Include="Source\Scene\SceneState\SceneState.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\InGameScene\InGameSceneStatesInclude.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\InGameScene\InGameSceneStateStack.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\InGameScene\States\InGameSceneState.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\InGameScene\States\InGameSceneState_GameOver.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\InGameScene\States\InGameSceneState_Paused.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\InGameScene\States\InGameSceneState_Playing.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\InGameScene\States\InGameSceneState_StageCleared.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\EditorMessageManager.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\ParameterEditing\IEditableParameter.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\ParameterEditing\ParameterEditingInclude.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\StageEditorColor.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\States\StageEditorSceneState.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\States\StageEditorSceneState_Edit.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\States\StageEditorSceneState_EditorSettings.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\States\StageEditorSceneState_EditStageBg.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\States\StageEditorSceneState_EditStageBGM.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\States\StageEditorSceneState_Edit_Move.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\States\StageEditorSceneState_Edit_Modify.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\States\StageEditorSceneState_Paused.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\States\StageEditorSceneState_Edit_Summon.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\States\StageEditorSceneState_ResizeStage.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\States\StageEditorSceneState_StageSettings.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\States\StageEditorSceneState_ThumbnailShooting.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\StageEditorSceneStatesInclude.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\Stage\Stage.h" />
+    <ClInclude Include="Source\Scene\TestScene\TestSceneImpl\TestSceneImpl_3.h" />
+    <ClInclude Include="Source\Scene\TestScene\TestSceneImpl\TestSceneImpl_4.h" />
+    <ClInclude Include="Source\Utility\Core\DxLibExtension.h" />
+    <ClInclude Include="Source\Utility\Core\Math\Transform.h" />
+    <ClInclude Include="Source\GameObject\Gimmick\HatenaBlock\HatenaBlock.h" />
+    <ClInclude Include="source\SceneObject\Actor\Mapchip\Item\ItemActor.h" />
+    <ClInclude Include="Source\GameSystems\GraphicResourceManager\GraphResourceManager.h" />
+    <ClInclude Include="Source\GameSystems\MasterData\internal\MasterData.h" />
+    <ClInclude Include="Source\GameSystems\MasterData\internal\MasterDataBase.h" />
+    <ClInclude Include="Source\GameSystems\MasterData\internal\MasterDataHelper.h" />
+    <ClInclude Include="Source\GameSystems\MasterData\internal\MdAnimation.h" />
+    <ClInclude Include="Source\GameSystems\MasterData\internal\MdBlockSkin.h" />
+    <ClInclude Include="Source\GameSystems\MasterData\internal\MdEntity.h" />
+    <ClInclude Include="Source\GameSystems\MasterData\internal\MdGameIcon.h" />
+    <ClInclude Include="Source\GameSystems\MasterData\internal\MdImageFile.h" />
+    <ClInclude Include="Source\GameSystems\MasterData\internal\MdParticle.h" />
+    <ClInclude Include="Source\GameSystems\MasterData\internal\MdSpriteSheet.h" />
+    <ClInclude Include="Source\GameSystems\ParticleManager\ParticleManager.h" />
+    <ClInclude Include="Source\GameSystems\ParticleManager\ParticleManagerImpl.h" />
+    <ClInclude Include="Source\GameSystems\ParticleManager\ParticleSystemSettings.h" />
+    <ClInclude Include="Source\GameSystems\ParticleManager\Particle\Particle.h" />
+    <ClInclude Include="Source\Scene\TestScene\TestSceneImpl\AllTestSceneImplInclude.h" />
+    <ClInclude Include="Source\Scene\TestScene\TestSceneImpl\TestSceneActor\ColliderHolder.h" />
+    <ClInclude Include="Source\Scene\TestScene\TestSceneImpl\TestSceneActor\ColliderHolderInitialParams.h" />
+    <ClInclude Include="Source\Scene\TestScene\TestSceneImpl\TestSceneImplBase.h" />
+    <ClInclude Include="Source\Scene\TestScene\TestSceneImpl\TestSceneImpl_1.h" />
+    <ClInclude Include="Source\Scene\TestScene\TestSceneImpl\TestSceneImpl_2.h" />
+    <ClInclude Include="Source\Scene\TestScene\TestSelectScene.h" />
+    <ClInclude Include="Source\Utility\Core\MathCore.h" />
+    <ClInclude Include="Source\Utility\Core\Math\Vector3D.h" />
+    <ClInclude Include="Source\Utility\Core\Rendering\AnimPlayInfo.h" />
+    <ClInclude Include="source\Utility\Core\Rendering\CameraParams.h" />
+    <ClInclude Include="Source\Utility\Core\Rendering\CanvasInfo.h" />
+    <ClInclude Include="Source\Utility\Core\SequentialTimer.h" />
+    <ClInclude Include="Source\Utility\ImGui\ImGuiInclude.h" />
+    <ClInclude Include="Source\Utility\Core\Rendering\BlendMode.h">
+      <SubType>EnumDefinition</SubType>
+    </ClInclude>
+    <ClInclude Include="Source\GameSystems\ParticleManager\Particle\ParticleSpawnDesc.h" />
+    <ClInclude Include="Source\GameSystems\ParticleManager\TextureLoader\SpriteTextureInfo.h" />
+    <ClInclude Include="Source\GameSystems\ParticleManager\TextureLoader\TextureLoader.h" />
+    <ClInclude Include="Source\Input\DeviceInput.h" />
+    <ClInclude Include="Source\Scene\AllScenesInclude.h" />
+    <ClInclude Include="source\GameSystems\CollisionManager.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\InGameScene\InGameScene.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\SpawnActorInfo.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\Stage\internal\StageBGInfo.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\Stage\internal\StageId.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\Stage\internal\StageJson.h" />
+    <ClInclude Include="Source\Scene\SceneBase.h" />
+    <ClInclude Include="Source\Scene\SceneBaseInitialParams.h" />
+    <ClInclude Include="Source\Scene\SceneManager.h" />
+    <ClInclude Include="Source\Scene\SceneType.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\EditorCommand\EditorCommands.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\EditorSceneInitialParams.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\ParameterEditing\ParamEditComponent\ParamEditComponent.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\ParameterEditing\ParamEditComponent\ParamEditGroup.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\ParameterEditing\ParamEditComponent\ParamEditNode.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\ParameterEditing\Validator\EditableParamValidator.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\ParameterEditing\EditParamType.h">
+      <SubType>EnumDefinition</SubType>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageEditorScene\StageEditorScene.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageInteractiveScene.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StagePerimeterColliderHolder.h" />
+    <ClInclude Include="Source\Scene\StageSelectScene\SelectSceneInitialParams.h" />
+    <ClInclude Include="Source\Scene\StageSelectScene\StageSelectScene.h" />
+    <ClInclude Include="Source\Scene\TestScene\TestScene.h" />
+    <ClInclude Include="Source\Scene\TitleScene\TitleScene.h" />
+    <ClInclude Include="Source\SystemTypes.h" />
+    <ClInclude Include="Source\GameSystems\Sound\SoundManager.h" />
+    <ClInclude Include="Source\Utility\Core\CodeGenerationHelper.h" />
+    <ClInclude Include="Source\Utility\Command\BasicCommands.h" />
+    <ClInclude Include="Source\Utility\Command\CommandBase.h" />
+    <ClInclude Include="Source\Utility\Core\EnumInfo.h" />
+    <ClInclude Include="Source\Utility\Core\FileUtil.h" />
+    <ClInclude Include="Source\Utility\ImGui\internal\ImGuiExtensions.h" />
+    <ClInclude Include="Source\Utility\ImGui\internal\ImGuiUtil.h" />
+    <ClInclude Include="Source\Utility\Core\Math\MathUtils.h" />
+    <ClInclude Include="Source\Utility\Core\Rendering\DrawBlendInfo.h" />
+    <ClInclude Include="Source\Utility\Core\Rendering\DrawHelper.h" />
+    <ClInclude Include="Source\Utility\Core\RenderingCore.h" />
+    <ClInclude Include="Source\Utility\IJsonSerializable.h" />
+    <ClInclude Include="Source\Utility\Core\Event.h" />
+    <ClInclude Include="Source\Utility\Core\Math\GeometryUtility.h" />
+    <ClInclude Include="source\SceneObject\Component\Collider\HitResult.h" />
+    <ClInclude Include="Source\Utility\Core\Math\Matrix3X3.h" />
+    <ClInclude Include="Source\Utility\Core\Math\RandomNumberGenerator.h" />
+    <ClInclude Include="Source\Utility\Core\Rendering\ScreenParams.h" />
+    <ClInclude Include="Source\Utility\SingletonBase.h" />
+    <ClInclude Include="Source\Utility\Core\StringUtils.h" />
+    <ClInclude Include="Source\Utility\UIElements\UIElements.h" />
+    <ClInclude Include="Source\Utility\Core\Math\Vector2D.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Resources\Stages\000\Info000.txt" />
+    <Text Include="Resources\Stages\002\Info002.txt" />
+    <Text Include="Resources\Stages\CombinableBlocks.txt" />
+    <Text Include="Resources\Stages\MapchipCategories.txt" />
+    <Text Include="Resources\Stages\Readme.txt" />
+    <Text Include="snippets\jsonovld.snippet" />
+    <Text Include="Source\Scene\TestScene\TestSceneImpl\TestSceneImpl_2.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgui\misc\debuggers\imgui.natstepfilter" />
+    <None Include="JsonKeys\outputs\all_json_keys.def" />
+    <None Include="packages.config" />
+    <None Include="resources\mapchip_blocks.json" />
+    <None Include="Resources\resources.json" />
+    <None Include="Resources\Stages\000\Map000.csv" />
+    <None Include="Shaders\BlockShaderInclude.hlsli" />
+    <None Include="Shaders\ParticleShaderInclude.hlsli" />
+    <None Include="snippets\definition_is_equal.snippet" />
+    <None Include="snippets\json_object_interface.snippet" />
+    <None Include="snippets\jsonovl.snippet" />
+    <None Include="snippets\json_value_interface.snippet" />
+    <None Include="snippets\non_default_json.snippet" />
+    <None Include="snippets\specialize_actor_traits.snippet" />
+    <None Include="snippets\specialize_params_traits.snippet" />
+    <None Include="snippets\t_are_equal_ignoring_base.snippet" />
+    <None Include="snippets\virtual_declare_block.snippet" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Shaders\BlockPS.hlsl">
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)shaders\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="Shaders\BlockVS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)shaders\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)shaders\%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="Shaders\CSDeactivateAllParticles.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)shaders\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="Shaders\CSSpawnParticle.hlsl">
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compute</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compute</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compute</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compute</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)shaders\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="Shaders\ParticleCS.hlsl">
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compute</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compute</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compute</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compute</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)shaders\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="Shaders\ParticlePS.hlsl">
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)shaders\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="Shaders\ParticleVS.hlsl">
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)shaders\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="imgui\misc\debuggers\imgui.natvis" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\directxtex_desktop_2019.2024.9.5.1\build\native\directxtex_desktop_2019.targets" Condition="Exists('packages\directxtex_desktop_2019.2024.9.5.1\build\native\directxtex_desktop_2019.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>このプロジェクトは、このコンピューター上にない NuGet パッケージを参照しています。それらのパッケージをダウンロードするには、[NuGet パッケージの復元] を使用します。詳細については、http://go.microsoft.com/fwlink/?LinkID=322105 を参照してください。見つからないファイルは {0} です。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\directxtex_desktop_2019.2024.9.5.1\build\native\directxtex_desktop_2019.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\directxtex_desktop_2019.2024.9.5.1\build\native\directxtex_desktop_2019.targets'))" />
+  </Target>
+  <!--Begin manually added Targets-->
+  <PropertyGroup>
+    <ScriptDir>$(ProjectDir)scripts\</ScriptDir>
+    <GeneratedDir>$(ProjectDir)Generated\</GeneratedDir>
+    <GeneratedEnumInfoDir>$(GeneratedDir)enum_info\</GeneratedEnumInfoDir>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  <!--Filename.gen.xmlよりも古いFilename_generated.cppを削除し,GenerateCodeUsingXMLターゲットを実行させる-->
+  <Target Name="DeleteGeneratedFilesOlderThanGenXml" BeforeTargets="PrepareForBuild">
+    <Exec Command="echo exec target 'DeleteGeneratedFilesOlderthanGenXml'" />
+    <ItemGroup>
+      <DeleteTargetSource Include="@(ClCompile)" Condition="Exists('%(ClCompile.RelativeDir)%(ClCompile.Filename).gen.xml')" />
+    </ItemGroup>
+    <Exec Command="echo Delete %(DeleteTargetSource.Filename)_generated.cpp" Condition="&#xD;&#xA;        %(DeleteTargetSource.Filename) != '' And&#xD;&#xA;        $([System.IO.File]::GetLastWriteTime('%(DeleteTargetSource.RelativeDir)%(DeleteTargetSource.Filename).gen.xml').Ticks) &gt;&#xD;&#xA;        $([System.IO.File]::GetLastWriteTime('$(GeneratedDir)%(DeleteTargetSource.Filename)_generated.cpp').Ticks)&#xD;&#xA;      " />
+    <Delete Files="$(GeneratedDir)%(DeleteTargetSource.Filename)_generated.cpp" Condition="&#xD;&#xA;        %(DeleteTargetSource.Filename) != '' And&#xD;&#xA;        $([System.IO.File]::GetLastWriteTime('%(DeleteTargetSource.RelativeDir)%(DeleteTargetSource.Filename).gen.xml').Ticks) &gt;&#xD;&#xA;        $([System.IO.File]::GetLastWriteTime('$(GeneratedDir)%(DeleteTargetSource.Filename)_generated.cpp').Ticks)&#xD;&#xA;      " />
+  </Target>
+  <!--.gen.xml処理-->
+  <!-- GenerateCodeUsingXMLに付ける？ Inputs="@(ClCompile -> '%(RelativeDir)%(Filename).gen.xml')" Outputs="@(ClCompile -> '$(GeneratedDir)%(Filename)_generated.cpp')" -->
+  <Target Name="GenerateCodeUsingXML" AfterTargets="DeleteGeneratedFilesOlderThanGenXml" BeforeTargets="RemoveGenerationSourceFromClCompile" Inputs="@(ClCompile)" Outputs="@(ClCompile -> '$(GeneratedDir)%(Filename)_generated.cpp')">
+    <ItemGroup>
+      <GenerationSource Include="@(ClCompile)" Condition="Exists('%(ClCompile.RelativeDir)%(ClCompile.Filename).gen.xml')" />
+    </ItemGroup>
+    <Exec Command="echo Begin 'GenerateCodeUsingXML' ..." />
+    <Exec Command="echo '%(GenerationSource.Filename)' is a generation source. GenerationConfig=='%(GenerationSource.RelativeDir)%(GenerationSource.Filename).gen.xml'" Condition="%(GenerationSource.Filename) != ''" />
+    <Exec Command="python $(ScriptDir)code_generator.py %(GenerationSource.Fullpath) $(GeneratedDir)%(GenerationSource.Filename)_generated.cpp utf-8" Condition="%(GenerationSource.Filename) != '' And '$(CharacterSet)' != 'MultiByte'" />
+    <Exec Command="python $(ScriptDir)code_generator.py %(GenerationSource.Fullpath) $(GeneratedDir)%(GenerationSource.Filename)_generated.cpp shift-jis" Condition="%(GenerationSource.Filename) != '' And '$(CharacterSet)' == 'MultiByte'" />
+    <ItemGroup>
+      <GeneratedFiles Include="@(GenerationSource -> '$(GeneratedDir)%(Filename)_generated.cpp')">
+        <OriginalDir>%(GenerationSource.RelativeDir)</OriginalDir>
+        <OriginalName>%(GenerationSource.Filename)</OriginalName>
+      </GeneratedFiles>
+      <ClCompile Include="@(GeneratedFiles)">
+        <AdditionalIncludeDirectories>$(ProjectDir)%(GeneratedFiles.OriginalDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+        <AdditionalModuleDependencies>%(GeneratedFiles.OriginalDir)%(GeneratedFiles.OriginalName).cpp</AdditionalModuleDependencies>
+        <SubType>LaterAdded</SubType>
+      </ClCompile>
+    </ItemGroup>
+    <ItemGroup>
+      <ClCompileAdded Include="@(ClCompile)" Condition="%(ClCompile.SubType) == 'LaterAdded'" />
+    </ItemGroup>
+    <Exec Command="echo AdditionalIncludeDirectory: '%(ClCompileAdded.AdditionalIncludeDirectories)'" />
+  </Target>
+  <!--EnumInfoの特殊化を生成-->
+  <Target Name="GenerateEnumInfoSpecializations" BeforeTargets="ClCompile" Inputs="@(ClInclude)" Outputs="@(ClInclude -> '$(GeneratedEnumInfoDir)%(Filename)_generated.cpp')">
+    <ItemGroup>
+      <!--SubTypeが'EnumDefinition'であるヘッダーファイル-->
+      <EnumDefinitions Include="@(ClInclude)" Condition="%(ClInclude.SubType) == 'EnumDefinition'" />
+    </ItemGroup>
+    <PropertyGroup>
+      <GeneratedCppPath>$(GeneratedEnumInfoDir)%(EnumDefinitions.Filename)_generated.cpp</GeneratedCppPath>
+    </PropertyGroup>
+    <Exec Command="echo Begin 'GenerateEnumInfoSpecializations' ..." />
+    <!--メッセージ出力-->
+    <Exec Command="echo Generate EnumInfo specialization(utf-8): '%(EnumDefinitions.Filename)%(EnumDefinitions.extension)' → '$(GeneratedEnumInfoDir)%(EnumDefinitions.Filename)_generated.cpp'" Condition="'%(EnumDefinitions.Filename)' != '' And '$(CharacterSet)' != 'MultiByte'" />
+    <Exec Command="echo Generate EnumInfo specialization(shift-jis): '%(EnumDefinitions.Filename)%(EnumDefinitions.extension)' → '$(GeneratedEnumInfoDir)%(EnumDefinitions.Filename)_generated.cpp'" Condition="'%(EnumDefinitions.Filename)' != '' And '$(CharacterSet)' == 'MultiByte'" />
+    <!--EnumInfoの特殊化を書き込む-->
+    <Exec Command="python $(ScriptDir)generate_enum_info.py %(EnumDefinitions.FullPath) $(GeneratedEnumInfoDir)%(EnumDefinitions.Filename)_generated.cpp utf-8" Condition="'%(EnumDefinitions.Filename)' != '' And '$(CharacterSet)' != 'MultiByte'" />
+    <Exec Command="python $(ScriptDir)generate_enum_info.py %(EnumDefinitions.FullPath) $(GeneratedEnumInfoDir)%(EnumDefinitions.Filename)_generated.cpp shift-jis" Condition="'%(EnumDefinitions.Filename)' != '' And '$(CharacterSet)' == 'MultiByte'" />
+    <ItemGroup>
+      <GeneratedCppFiles Include="$(GeneratedEnuminfoDir)**\*.cpp" />
+      <ClCompile Include="@(GeneratedCppFiles)" />
+    </ItemGroup>
+  </Target>
+  <!--
+    Filename.gen.xmlが存在するFilename.cppをClCompileから除外する.
+    ClCompileより前にするとFilename.cppに変更が加わってもビルド不要と判断されてしまうので
+    ClCompile後に実行
+  -->
+  <Target Name="RemoveGenerationSourceFromClCompile" AfterTargets="ClCompile">
+    <ItemGroup>
+      <GenerationSource Include="@(ClCompile)" Condition="Exists('%(ClCompile.RelativeDir)%(ClCompile.Filename).gen.xml')" />
+      <ClCompile Remove="@(GenerationSource)" />
+    </ItemGroup>
+    <Exec Command="echo Begin 'RemoveGenerationSourceFromClCompile' ..." />
+    <Exec Command="echo Remove from ClCompile: '%(GenerationSource.FullPath)'" Condition="%(GenerationSource.Filename) != ''" />
+  </Target>
+  <!--End manually added Targets-->
+</Project>

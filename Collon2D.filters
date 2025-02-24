@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{80beea12-f65c-41dc-a10d-81fea9a01c3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Scene">
+      <UniqueIdentifier>{55bf6ff6-3351-4495-8756-c1ad62170a3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Utility">
+      <UniqueIdentifier>{07a31044-9ea3-4f9b-904f-fcd5bdfd43de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Scene\SampleScene">
+      <UniqueIdentifier>{7c4974fa-b400-4955-8ee8-43c01dd97140}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GameObject">
+      <UniqueIdentifier>{a76aa217-70e0-4b4a-a725-8d1f3938de42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GameObject\SampleObject">
+      <UniqueIdentifier>{067aa7eb-156d-43ad-85b0-815fca504c68}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\SceneBase.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\SceneManager.cpp">
+      <Filter>Source\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utility\Vector2D.cpp">
+      <Filter>Source\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameSystems\GraphicResourceManager\GraphicResourceManager.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Character\Character.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Character\Player\Player.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Character\Enemy\EnemyPurple\EnemyPurple.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Character\Enemy\EnemyBase.cpp" />
+    <ClCompile Include="Source\Scene\InGameScene\InGameScene.cpp" />
+    <ClCompile Include="Source\Utility\GeometryUtility.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Mapchip\Item\ItemBase.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Mapchip\Item\Coin\Coin.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Mapchip\Item\PicoHammer\PicoHammer.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Mapchip\Item\RecoveryDrink\RecoveryDrink.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Mapchip\Item\InvincibleDrink\InvincibleDrink.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Mapchip\Gimmick\GimmickBase.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Mapchip\Gimmick\GoalFlag\GoalFlag.cpp" />
+    <ClCompile Include="Source\GameSystems\DebugInfoVisualizer.cpp" />
+    <ClCompile Include="Source\GameSystems\Sound\SoundManager.cpp" />
+    <ClCompile Include="Source\Scene\TitleScene\TitleScene.cpp" />
+    <ClCompile Include="Source\GameObject\Component\Collider\BoxCollider.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Actor.cpp" />
+    <ClCompile Include="Source\GameObject\Component\Collider\ColliderBase.cpp" />
+    <ClCompile Include="Source\GameObject\Component\Collider\SegmentCollider.cpp" />
+    <ClCompile Include="Source\GameObject\Component\ComponentBase.cpp" />
+    <ClCompile Include="Source\Scene\InGameScene\CollisionManager.cpp" />
+    <ClCompile Include="Source\Scene\StageEditorScene\StageEditorScene.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Mapchip\Block\RectangleBlock\RectangleBlock.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Mapchip\MapchipId.cpp" />
+    <ClCompile Include="Source\GameSystems\Json\JsonValue\Int32Wrapper\Abstractint32Wrapper.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\ActorParamTypes.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\ActorInitialParams.cpp" />
+    <ClCompile Include="Source\GameSystems\Json\JsonObject\AbstractJsonObject.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Character\CharacterInitialParams.cpp" />
+    <ClCompile Include="Source\GameObject\Component\Renderer\RendererBase.cpp" />
+    <ClCompile Include="Source\GameObject\Component\Renderer\InAnimateRenderer\InAnimateRenderer.cpp" />
+    <ClCompile Include="Source\Utility\UIElements\UIElements.cpp" />
+    <ClCompile Include="Source\GameSystems\GraphicResourceManager\SpriteInfo\SpriteInfo.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Mapchip\Item\ItemInitialParams.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Mapchip\Block\BlockComponentMapper.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Mapchip\Block\SlopeGround\SlopeBlock.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Mapchip\Block\MapchipBlockInfo.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Mapchip\Block\SlopeGround\SlopeBlockInitialParams.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Mapchip\Block\RectangleBlock\RectangleBlockInitialParams.cpp" />
+    <ClCompile Include="Source\GameObject\Component\Collider\HitResult.cpp" />
+    <ClCompile Include="Source\Scene\InGameScene\StageId.cpp" />
+    <ClCompile Include="Source\GameSystems\Sound\BgmInfo.cpp" />
+    <ClCompile Include="Source\Scene\MenuScene\MenuScene.cpp" />
+    <ClCompile Include="Source\Scene\MenuScene\MenuActor\MenuActor.cpp" />
+    <ClCompile Include="Source\GameSystems\Json\JsonObjectHolder.cpp" />
+    <ClCompile Include="Source\Input\KeyboardInput.cpp" />
+    <ClCompile Include="Source\Scene\MenuScene\BlockColliders\BlockColliders.cpp" />
+    <ClCompile Include="Source\Scene\MenuScene\MenuSceneObject\MenuSceneObject.cpp" />
+    <ClCompile Include="Source\Scene\MenuScene\OverlapColliders\OverlapColliders.cpp" />
+    <ClCompile Include="Source\Utility\EventTrigger\EventButton\EventButton.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Character\Enemy\EnemyRed\EnemyRed.cpp" />
+    <ClCompile Include="Source\GameObject\Component\Renderer\AnimateRenderer\AnimType\StringTypeMapDefinition\StringTypeMapDefinition.cpp" />
+    <ClCompile Include="Source\Utility\DrawBlendInfo\DrawBlendInfo.cpp" />
+    <ClCompile Include="Source\Utility\DrawHelper\DrawHelper.cpp" />
+    <ClCompile Include="Source\SystemTypes.cpp" />
+    <ClCompile Include="Source\GameSystems\DebugSettings.cpp" />
+    <ClCompile Include="Source\GameObject\Component\EventScheduler\EventScheduler.cpp" />
+    <ClCompile Include="Source\GameObject\Component\SceneComponent.cpp" />
+    <ClCompile Include="Source\GameObject\Component\Renderer\AnimateRenderer\MultiAnimRendererImpl.cpp" />
+    <ClCompile Include="Source\GameObject\Component\Renderer\AnimateRenderer\SingleAnimRendererImpl.cpp" />
+    <ClCompile Include="Source\GameObject\Component\Renderer\RenderingParameters.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Projectile\ProjectileBase.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\ParticleEmitter\Particle\ParticleBase.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\ParticleEmitter\Particle\AnimateParticle\AnimateParticle.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\ParticleEmitter\Particle\ParticleInfo\ParticleInfo.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Mapchip\MapchipGraphicInfo.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\ParticleEmitter\ParticleEmitterInitialParams.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\ParticleEmitter\ParticleEmitter.cpp" />
+    <ClCompile Include="Source\Utility\RandomNumberGenerator.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Character\Player\PlayerInitialParams.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\Projectile\MagicProjectile\MagicProjectile.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\ParticleEmitter\ParticlePool\ParticlePool.cpp" />
+    <ClCompile Include="Source\Scene\StageSelectScene\StageSelectScene.cpp" />
+    <ClCompile Include="Source\GameSystems\GraphicResourceManager\DivGraphInfo\DivGraphInfo.cpp" />
+    <ClCompile Include="Source\Scene\InGameScene\StageJson.cpp" />
+    <ClCompile Include="Source\GameSystems\Json\JsonValue\AbstractJsonValue.cpp" />
+    <ClCompile Include="Source\Scene\InGameScene\SpawnActorInfo.cpp" />
+    <ClCompile Include="Source\Scene\InGameScene\StageBGInfo.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\StageInteractiveScene.cpp" />
+    <ClCompile Include="Source\Scene\StageInteractiveScene\StagePerimeterColliderHolder\StagePerimeterColliderHolder.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\ActorType.cpp" />
+    <ClCompile Include="Source\GameObject\Actor\ActorInitialParamsType.cpp" />
+    <ClCompile Include="Source\Scene\StageEditorScene\ActorModificationPanel\ActorModificationPanel.cpp" />
+    <ClCompile Include="Source\Scene\StageEditorScene\ActorModificationPanel\ModificationItem\ModificationItem.cpp" />
+    <ClCompile Include="Source\Utility\CycleButton\CycleButtonBase.cpp" />
+    <ClCompile Include="Source\Utility\CycleButton\ToggleButton\ToggleButton.cpp" />
+    <ClCompile Include="Source\Utility\UIElements\UIBase.cpp" />
+    <ClCompile Include="Source\Utility\UIElements\SizableUI\SizableUI.cpp" />
+    <ClCompile Include="Source\Utility\UIElements\UIContainer\UIContainer.cpp" />
+    <ClCompile Include="Source\Utility\UIElements\SizableUI\PopupPanel\PopupPanel.cpp" />
+    <ClCompile Include="Source\Scene\StageEditorScene\ActorModificationPanel\ModificationPopup\ModificationPopup.cpp" />
+    <ClCompile Include="Source\Scene\StageEditorScene\ActorModificationPanel\ModificationPopup\BlockIdPopup\BlockIdPopup.cpp" />
+    <ClCompile Include="Source\Utility\UIElements\SizableUI\RectangleUI\RectangleUI.cpp" />
+    <ClCompile Include="Source\Utility\UIElements\Rectangle\MapchipBlockIcon\RectangleBlockIcon.cpp" />
+    <ClCompile Include="Source\Scene\StageEditorScene\ActorModificationPanel\ModificationPopup\NumberPopup\NumberPopup.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\SystemTypes.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\SceneBase.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\SceneManager.h">
+      <Filter>Source\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utility\Vector2D.h">
+      <Filter>Source\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameObject\Actor\Character\Player\Player.h" />
+    <ClInclude Include="Source\GameObject\Actor\Character\Character.h" />
+    <ClInclude Include="Source\GameObject\Actor\Character\Enemy\EnemyBase.h" />
+    <ClInclude Include="Source\GameObject\Actor\Character\Enemy\EnemyPurple\EnemyPurple.h" />
+    <ClInclude Include="Source\GameObject\Actor\Character\Enemy\EnemyRed\EnemyRed.h" />
+    <ClInclude Include="Source\GameObject\Actor\Mapchip\Item\ItemBase.h" />
+    <ClInclude Include="Source\GameObject\Actor\Mapchip\Item\Coin\Coin.h" />
+    <ClInclude Include="Source\GameObject\Actor\Mapchip\Gimmick\GimmickBase.h" />
+    <ClInclude Include="Source\Scene\GameOverScene\GameOverScene.h" />
+    <ClInclude Include="Source\Scene\InGameScene\InGameScene.h" />
+    <ClInclude Include="Source\Scene\TitleScene\TitleScene.h" />
+    <ClInclude Include="Source\GameSystems\GlobalGameData.h" />
+    <ClInclude Include="Source\GameSystems\Sound\SoundManager.h" />
+    <ClInclude Include="Source\GameSystems\GraphicResourceManager\GraphicResourceManager.h" />
+    <ClInclude Include="Source\GameObject\Actor\Mapchip\Gimmick\GoalFlag\GoalFlag.h" />
+    <ClInclude Include="Source\Utility\GeometryUtility.h" />
+    <ClInclude Include="Source\GameObject\Gimmick\HatenaBlock\HatenaBlock.h" />
+    <ClInclude Include="Source\GameObject\Actor\Mapchip\Item\PicoHammer\PicoHammer.h" />
+    <ClInclude Include="Source\GameObject\Actor\Mapchip\Item\RecoveryDrink\RecoveryDrink.h" />
+    <ClInclude Include="Source\GameObject\Actor\Mapchip\Item\InvincibleDrink\InvincibleDrink.h" />
+    <ClInclude Include="Source\GameSystems\DebugInfoVisualizer.h" />
+    <ClInclude Include="Source\GameObject\Component\Collider\BoxCollider.h" />
+    <ClInclude Include="Source\GameObject\Actor\Actor.h" />
+    <ClInclude Include="Source\GameObject\Component\Collider\ColliderBase.h" />
+    <ClInclude Include="Source\GameObject\Component\Collider\SegmentCollider.h" />
+    <ClInclude Include="Source\GameObject\Component\ComponentBase.h" />
+    <ClInclude Include="Source\Scene\InGameScene\CollisionManager.h" />
+    <ClInclude Include="Source\GameObject\Component\Collider\HitResult.h" />
+    <ClInclude Include="Source\Utility\ScreenParams.h" />
+    <ClInclude Include="Source\Scene\StageEditorScene\StageEditorScene.h" />
+    <ClInclude Include="Source\GameObject\Actor\Mapchip\Block\RectangleBlock\RectangleBlock.h" />
+    <ClInclude Include="Source\GameObject\Actor\Mapchip\MapchipId.h" />
+    <ClInclude Include="Source\GameSystems\Json\JsonValue\Int32Wrapper\AbstractInt32Wrapper.h" />
+    <ClInclude Include="Source\GameObject\Actor\Mapchip\Item\ItemType.h" />
+    <ClInclude Include="Source\GameObject\Actor\ActorInitialParams.h" />
+    <ClInclude Include="Source\GameObject\Actor\Mapchip\Item\ItemInitialParams.h" />
+    <ClInclude Include="Source\GameObject\Actor\Mapchip\Gimmick\GimmickInitialParams.h" />
+    <ClInclude Include="Source\GameObject\Actor\Mapchip\Block\SlopeGround\SlopeBlockInitialParams.h" />
+    <ClInclude Include="Source\GameObject\Actor\Mapchip\Block\SlopeGround\SlopeShape.h" />
+    <ClInclude Include="Source\GameObject\Actor\Mapchip\Block\RectangleBlock\RectangleBlockInitialParams.h" />
+    <ClInclude Include="Source\GameObject\Actor\ActorParamTypes.h" />
+    <ClInclude Include="Source\GameSystems\Json\JsonObject\AbstractJsonObject.h" />
+    <ClInclude Include="Source\GameSystems\Json\JsonValue\AbstractJsonValue.h" />
+    <ClInclude Include="Source\GameObject\Actor\Character\CharacterInitialParams.h" />
+    <ClInclude Include="Source\GameObject\Component\Renderer\RendererBase.h" />
+    <ClInclude Include="Source\GameObject\Component\Renderer\InAnimateRenderer\InAnimateRenderer.h" />
+    <ClInclude Include="Source\GameObject\Component\Renderer\AnimateRenderer\SingleAnimRenderer.h" />
+    <ClInclude Include="Source\Scene\UIPanel.h" />
+    <ClInclude Include="Source\Utility\UIElements\UIElements.h" />
+    <ClInclude Include="Source\GameSystems\GraphicResourceManager\SpriteInfo\SpriteInfo.h" />
+    <ClInclude Include="Source\GameSystems\Json\JsonKeys\JsonKeys.h" />
+    <ClInclude Include="Source\GameObject\Actor\Mapchip\Block\BlockComponentMapper.h" />
+    <ClInclude Include="Source\GameObject\Actor\Mapchip\Block\SlopeGround\SlopeBlock.h" />
+    <ClInclude Include="Source\GameObject\Actor\Mapchip\Block\MapchipBlockInfo.h" />
+    <ClInclude Include="Source\GameObject\Actor\AllActorsInclude.h" />
+    <ClInclude Include="Source\Scene\InGameScene\StageId.h" />
+    <ClInclude Include="Source\GameSystems\Sound\BgmInfo.h" />
+    <ClInclude Include="Source\GameSystems\Sound\BgmId.h" />
+    <ClInclude Include="Source\Scene\MenuScene\MenuScene.h" />
+    <ClInclude Include="Source\Scene\MenuScene\MenuActor\MenuActor.h" />
+    <ClInclude Include="Source\GameSystems\Json\JsonObjectHolder.h" />
+    <ClInclude Include="Source\Input\KeyboardInput.h" />
+    <ClInclude Include="Source\Scene\MenuScene\BlockColliders\BlockColliders.h" />
+    <ClInclude Include="Source\Scene\MenuScene\MenuSceneObject\MenuSceneObject.h" />
+    <ClInclude Include="Source\Scene\MenuScene\OverlapColliders\OverlapColliders.h" />
+    <ClInclude Include="Source\Utility\EventTrigger\EventTriggerBase.h" />
+    <ClInclude Include="Source\Utility\EventTrigger\EventButton\EventButton.h" />
+    <ClInclude Include="Source\GameObject\Component\Renderer\AnimateRenderer\AnimType\PlayerAnimType.h" />
+    <ClInclude Include="Source\GameObject\Component\Renderer\AnimateRenderer\AnimType\CreateAnimTypeMacro.h" />
+    <ClInclude Include="Source\GameObject\Component\Renderer\AnimateRenderer\AnimType\EffectAnimType.h" />
+    <ClInclude Include="Source\GameObject\DrawPriority.h" />
+    <ClInclude Include="Source\Utility\DrawBlendInfo\DrawBlendInfo.h" />
+    <ClInclude Include="Source\Utility\DrawHelper\DrawHelper.h" />
+    <ClInclude Include="Source\GameObject\Component\Renderer\AnimateRenderer\Specializations\EffectAnimTypeSpecialization.h" />
+    <ClInclude Include="Source\GameObject\Component\Renderer\AnimateRenderer\AnimType\WalkingEnemyAnimType.h" />
+    <ClInclude Include="Source\GameSystems\DebugSettings.h" />
+    <ClInclude Include="Source\GameObject\Component\EventScheduler\EventScheduler.h" />
+    <ClInclude Include="Source\GameObject\Component\Renderer\AnimateRenderer\AnimPlayType.h" />
+    <ClInclude Include="Source\GameObject\Component\SceneComponent.h" />
+    <ClInclude Include="Source\GameObject\GameObject.h" />
+    <ClInclude Include="Source\GameObject\Component\Renderer\AnimateRenderer\MultiAnimRenderer.h" />
+    <ClInclude Include="Source\GameObject\Component\Renderer\AnimateRenderer\SingleAnimRendererImpl.h" />
+    <ClInclude Include="Source\GameObject\Component\Renderer\AnimateRenderer\MultiAnimRendererImpl.h" />
+    <ClInclude Include="Source\GameObject\Component\Renderer\RenderingParameters.h" />
+    <ClInclude Include="Source\GameObject\Actor\Projectile\ProjectileBase.h" />
+    <ClInclude Include="Source\GameObject\Actor\Projectile\ProjectileInitialParams.h" />
+    <ClInclude Include="Source\GameObject\Actor\ParticleEmitter\ParticleEmitter.h" />
+    <ClInclude Include="Source\GameObject\Actor\ParticleEmitter\Particle\ParticleBase.h" />
+    <ClInclude Include="Source\GameObject\Actor\ParticleEmitter\Particle\AnimateParticle\AnimateParticle.h" />
+    <ClInclude Include="Source\GameObject\Actor\ParticleEmitter\Particle\ParticleInfo\ParticleInfo.h" />
+    <ClInclude Include="Source\GameObject\Actor\ParticleEmitter\Particle\ParticleInitialParams.h" />
+    <ClInclude Include="Source\GameObject\Actor\Mapchip\Block\MapchipBlockId.h" />
+    <ClInclude Include="Source\GameObject\Actor\Mapchip\MapchipGraphicInfo.h" />
+    <ClInclude Include="Source\GameObject\Actor\ParticleEmitter\Particle\ParticleInfo\ParticleId.h" />
+    <ClInclude Include="Source\GameObject\Actor\ParticleEmitter\ParticleEmitterInitialParams.h" />
+    <ClInclude Include="Source\Utility\RandomNumberGenerator.h" />
+    <ClInclude Include="Source\GameObject\Actor\ParticleEmitter\Particle\AnimateParticle\AnimateParticleInitialParams.h" />
+    <ClInclude Include="Source\GameObject\Actor\Character\Player\PlayerInitialParams.h" />
+    <ClInclude Include="Source\GameObject\Actor\Projectile\MagicProjectile\MagicProjectile.h" />
+    <ClInclude Include="Source\GameObject\Actor\ParticleEmitter\ParticlePool\ParticlePool.h" />
+    <ClInclude Include="Source\Scene\StageEditorScene\EditorSceneInitialParams.h" />
+    <ClInclude Include="Source\Scene\SceneBaseInitialParams.h" />
+    <ClInclude Include="Source\Scene\SceneType.h" />
+    <ClInclude Include="Source\Scene\StageSelectScene\StageSelectScene.h" />
+    <ClInclude Include="Source\Scene\StageSelectScene\SelectSceneInitialParams.h" />
+    <ClInclude Include="Source\Scene\InGameScene\IngameSceneInitialParams.h" />
+    <ClInclude Include="Source\Scene\AllScenesInclude.h" />
+    <ClInclude Include="Source\GameSystems\GraphicResourceManager\DivGraphInfo\DivGraphInfo.h" />
+    <ClInclude Include="Source\GameSystems\Json\JsonValue\UUIDWrapper\AbstractUUIDWrapper.h" />
+    <ClInclude Include="Source\Scene\InGameScene\StageJson.h" />
+    <ClInclude Include="Source\Scene\InGameScene\SpawnActorInfo.h" />
+    <ClInclude Include="Source\Scene\InGameScene\StageBGInfo.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StageInteractiveScene.h" />
+    <ClInclude Include="Source\Scene\StageInteractiveScene\StagePerimeterColliderHolder\StagePerimeterColliderHolder.h" />
+    <ClInclude Include="Source\GameObject\Actor\ActorType.h" />
+    <ClInclude Include="Source\GameObject\Actor\ActorInitialParamsType.h" />
+    <ClInclude Include="Source\Scene\StageEditorScene\ActorModificationPanel\ActorModificationPanel.h" />
+    <ClInclude Include="Source\Scene\StageEditorScene\ActorModificationPanel\ModificationItem\ModificationItem.h" />
+    <ClInclude Include="Source\Scene\StageEditorScene\ActorModificationPanel\ModificationIcons.h" />
+    <ClInclude Include="Source\Utility\CycleButton\CycleButtonBase.h" />
+    <ClInclude Include="Source\Utility\CycleButton\ToggleButton\ToggleButton.h" />
+    <ClInclude Include="Source\Utility\CycleButton\MultiStateButton\MultiStateButton.h" />
+    <ClInclude Include="Source\Utility\UIElements\UIBase.h" />
+    <ClInclude Include="Source\Utility\UIElements\SizableUI\SizableUI.h" />
+    <ClInclude Include="Source\Utility\UIElements\UIContainer\UIContainer.h" />
+    <ClInclude Include="Source\Utility\UIElements\SizableUI\EditableValueUI\EditableValueUI.h" />
+    <ClInclude Include="Source\Scene\StageEditorScene\ActorModificationPanel\ModificationItem\ItemLayout.h" />
+    <ClInclude Include="Source\Utility\UIElements\SizableUI\PopupPanel\PopupPanel.h" />
+    <ClInclude Include="Source\Scene\StageEditorScene\ActorModificationPanel\ModificationPopup\ModificationPopup.h" />
+    <ClInclude Include="Source\Scene\StageEditorScene\ActorModificationPanel\ModificationItem\ValueType.h" />
+    <ClInclude Include="Source\Scene\StageEditorScene\ActorModificationPanel\ModificationPopup\BlockIdPopup\BlockIdPopup.h" />
+    <ClInclude Include="Source\Scene\StageEditorScene\ActorModificationPanel\ModificationPopup\NumberPopup\NumberPopup.h" />
+    <ClInclude Include="Source\Utility\UIElements\SizableUI\RectangleUI\RectangleUI.h" />
+    <ClInclude Include="Source\Utility\UIElements\Rectangle\MapchipBlockIcon\RectangleBlockIcon.h" />
+    <ClInclude Include="Source\Utility\Algorithm.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Resources\Stages\Readme.txt" />
+    <Text Include="Resources\Stages\CombinableBlocks.txt" />
+    <Text Include="Resources\Stages\002\Info002.txt" />
+    <Text Include="Resources\Stages\MapchipCategories.txt" />
+    <Text Include="Resources\Stages\000\Info000.txt" />
+    <Text Include="snippets\jsonovld.snippet" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stages\000\Map000.csv" />
+    <None Include="Resources\resources.json" />
+    <None Include="snippets\jsonovl.snippet" />
+    <None Include="resources\mapchip_blocks.json" />
+    <None Include="snippets\non_default_json.snippet" />
+    <None Include="snippets\json_object_interface.snippet" />
+    <None Include="snippets\json_value_interface.snippet" />
+    <None Include="snippets\t_are_equal_ignoring_base.snippet" />
+    <None Include="snippets\definition_is_equal.snippet" />
+    <None Include="snippets\specialize_actor_traits.snippet" />
+    <None Include="snippets\specialize_params_traits.snippet" />
+    <None Include="snippets\virtual_declare_block.snippet" />
+    <None Include="JsonKeys\outputs\all_json_keys.def" />
+    <None Include="JsonKeys\all_json_keys.def" />
+  </ItemGroup>
+</Project>

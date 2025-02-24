@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GenerationConfig>
+    <ReplaceMacro>
+        <replace name="replaceName_A" value="100" />
+        <replace name="replaceName_B" value="200" />
+        <replace name="replaceName_C" value="true" />
+        <replace name="replaceName_D" value="o" />
+        <replace name="replaceName_E" value="str" />
+    </ReplaceMacro>
+</GenerationConfig>

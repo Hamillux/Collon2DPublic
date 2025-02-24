@@ -1,0 +1,30 @@
+{
+	"colliderHolders": [
+		{
+			"drawPriority": 0,
+			"transform": {
+				"position": [ 0, 0 ],
+				"rotation": 0
+			},
+			"physics": {
+				"mass": 1,
+				"gravityScale": 0,
+				"coeffAirFriction": 0
+			},
+			"colliderType": 0
+		},
+		{
+			"drawPriority": 0,
+			"transform": {
+				"position": [ 100, 100 ],
+				"rotation": 0
+			},
+			"physics": {
+				"mass": 1,
+				"gravityScale": 0,
+				"coeffAirFriction":0
+			},
+			"colliderType": 0
+		}
+	]
+}
