@@ -1,0 +1,4 @@
+ItemID, ItemName, IconId, Score, OnUsedActionName
+1,PicoHammer,361,1000,OnUsed_PicoHammer
+2,HealingDrink,371,1000,OnUsed_HealingDrink
+3,EnergyDrink,372,1000,OnUsed_EnergyDrink

@@ -1,0 +1,15 @@
+{
+    "drawPriority": 0,
+    "physics": {
+        "coeffAirFriction": 0.0,
+        "gravityScale": 0.0,
+        "mass": 1.0
+    },
+    "transform": {
+        "position": [
+            0.0,
+            0.0
+        ],
+        "rotation": 0.0
+    }
+}

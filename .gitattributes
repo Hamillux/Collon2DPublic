@@ -1,0 +1,14 @@
+* text=auto eol=lf
+
+*.sln text eol=crlf
+*.vcxproj text eol=crlf
+*.filters text eol=crlf
+
+
+*.jpg -text
+*.png -text
+*.bmp -text
+*.dds -text
+*.ogg -text
+*.wav -text
+*.mp3 -text

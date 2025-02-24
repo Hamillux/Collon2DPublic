@@ -1,0 +1,22 @@
+{
+    "drawPriority": 0,
+    "physics": {
+        "coeffAirFriction": 0.0,
+        "gravityScale": 0.0,
+        "mass": 1.0
+    },
+    "rectangleBlockId": 1,
+    "tileCount": [
+        3,
+        3
+    ],
+    "transform": {
+        "position": [
+            0.0,
+            0.0
+        ],
+        "rotation": 0.0
+    },
+    "blockId":1,
+    "horizontalFlip":false
+}

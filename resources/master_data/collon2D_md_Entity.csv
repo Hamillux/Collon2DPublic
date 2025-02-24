@@ -1,0 +1,9 @@
+ID, Type, DisplayName, Category, IconID, InitialParamsJsonName
+1,SlopeBlock,SlopeBlock,Block,355,SlopeBlock.json
+2,SlopeBlock2,SlopeBlock2,Block,376,SlopeBlock2.json
+3,RectangleBlock,RectangleBlock,Block,356,RectangleBlock.json
+4,CrackedBrick,CrackedBrick,Gimmick,357,Actor.json
+6,Coin,Coin,Gimmick,360,Coin.json
+9,FlyingEnemy,FlyingEnemy,Character,363,FlyingEnemy.json
+10,TacklingEnemy,TacklingEnemy,Character,364,TacklingEnemy.json
+11,WalkingEnemy,WalkingEnemy,Character,365,WalkingEnemy.json

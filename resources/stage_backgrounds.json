@@ -1,0 +1,282 @@
+[
+    {
+        "id": 1,
+        "name": "City 1",
+        "bgInfos": [
+            {
+                "distance": 100,
+                "imageId": 12
+            },
+            {
+                "distance": 75,
+                "imageId": 13
+            },
+            {
+                "distance": 50,
+                "imageId": 14
+            },
+            {
+                "distance": 25,
+                "imageId": 15
+            },
+            {
+                "distance": 5,
+                "imageId": 16
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "City 2",
+        "bgInfos": [
+            {
+                "distance": 120,
+                "imageId": 17
+            },
+            {
+                "distance": 90,
+                "imageId": 18
+            },
+            {
+                "distance": 60,
+                "imageId": 19
+            },
+            {
+                "distance": 30,
+                "imageId": 20
+            },
+            {
+                "distance": 5,
+                "imageId": 21
+            },
+            {
+                "distance": 5,
+                "imageId": 22
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "City 3",
+        "bgInfos": [
+            {
+                "distance": 120,
+                "imageId": 23
+            },
+            {
+                "distance": 90,
+                "imageId": 24
+            },
+            {
+                "distance": 60,
+                "imageId": 25
+            },
+            {
+                "distance": 30,
+                "imageId": 26
+            },
+            {
+                "distance": 5,
+                "imageId": 27
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "City 4",
+        "bgInfos": [
+            {
+                "distance": 120,
+                "imageId": 28
+            },
+            {
+                "distance": 100,
+                "imageId": 29
+            },
+            {
+                "distance": 80,
+                "imageId": 30
+            },
+            {
+                "distance": 60,
+                "imageId": 31
+            },
+            {
+                "distance": 40,
+                "imageId": 32
+            },
+            {
+                "distance": 10,
+                "imageId": 33
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "City 5",
+        "bgInfos": [
+            {
+                "distance": 120,
+                "imageId": 34
+            },
+            {
+                "distance": 100,
+                "imageId": 35
+            },
+            {
+                "distance": 80,
+                "imageId": 36
+            },
+            {
+                "distance": 60,
+                "imageId": 37
+            },
+            {
+                "distance": 40,
+                "imageId": 38
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "City 6",
+        "bgInfos": [
+            {
+                "distance": 120,
+                "imageId": 39
+            },
+            {
+                "distance": 100,
+                "imageId": 40
+            },
+            {
+                "distance": 80,
+                "imageId": 41
+            },
+            {
+                "distance": 60,
+                "imageId": 42
+            },
+            {
+                "distance": 40,
+                "imageId": 43
+            },
+            {
+                "distance": 20,
+                "imageId": 44
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "City 7",
+        "bgInfos": [
+            {
+                "distance": 120,
+                "imageId": 45
+            },
+            {
+                "distance": 100,
+                "imageId": 46
+            },
+            {
+                "distance": 80,
+                "imageId": 47
+            },
+            {
+                "distance": 60,
+                "imageId": 48
+            },
+            {
+                "distance": 40,
+                "imageId": 49
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "City 8",
+        "bgInfos": [
+            {
+                "distance": 120,
+                "imageId": 50
+            },
+            {
+                "distance": 100,
+                "imageId": 51
+            },
+            {
+                "distance": 80,
+                "imageId": 52
+            },
+            {
+                "distance": 60,
+                "imageId": 53
+            },
+            {
+                "distance": 40,
+                "imageId": 54
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Mountain 1",
+        "bgInfos": [
+            {
+                "distance": 100,
+                "imageId": 55
+            },
+            {
+                "distance": 75,
+                "imageId": 56
+            },
+            {
+                "distance": 50,
+                "imageId": 57
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Mountain 2",
+        "bgInfos": [
+            {
+                "distance": 100,
+                "imageId": 60
+            },
+            {
+                "distance": 50,
+                "imageId": 61
+            },
+            {
+                "distance": 3,
+                "imageId": 62
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Forest 1",
+        "bgInfos": [
+            {
+                "distance": 50,
+                "imageId": 58
+            },
+            {
+                "distance": 10,
+                "imageId": 59
+            }
+        ]
+    },
+    {
+        "id":12,
+        "name":"White",
+        "bgInfos":[
+            {
+                "distance": 1,
+                "imageId":67
+            }
+        ]
+    }
+]

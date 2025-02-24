@@ -1,0 +1,8 @@
+{
+    "lifeTime": [0.5,1.0],
+    "gravityScale": [1, 2],
+    "size": [64,128],
+    "animationId":10,
+    "velocityAngle":90,
+    "initialSpeed":[100,200]
+}

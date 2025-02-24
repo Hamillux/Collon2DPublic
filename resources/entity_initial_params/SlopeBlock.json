@@ -1,0 +1,21 @@
+{
+    "drawPriority": 0,
+    "flipHorizontal": false,
+    "physics": {
+        "coeffAirFriction": 0.0,
+        "gravityScale": 0.0,
+        "mass": 1.0
+    },
+    "scale": 2,
+    "slopeBlockId": 0,
+    "transform": {
+        "position": [
+            0.0,
+            0.0
+        ],
+        "rotation": 0.0
+    },
+    "blockId":1,
+    "horizontalFlip":false,
+    "widthPerHeight":1
+}

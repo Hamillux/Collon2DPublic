@@ -1,0 +1,10 @@
+.vs/
+/x64
+/Log.txt
+/snippets/
+/intermediate/
+GitIgnored/
+imgui.ini
+__pycache__/
+*.user
+cln2d_config.json

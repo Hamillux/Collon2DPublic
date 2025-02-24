@@ -1,0 +1,77 @@
+{
+    "actors": [
+        {
+            "entityType": "Player",
+            "initialParams": {
+                "drawPriority": 1,
+                "lookRight": true,
+                "maxFlySpeed": 300,
+                "maxHp": 100,
+                "maxSp": 100,
+                "maxWalkSpeed": 600,
+                "physics": {
+                    "coeffAirFriction": 1.0,
+                    "gravityScale": 1.0,
+                    "mass": 1.0
+                },
+                "transform": {
+                    "position": [
+                        48.0,
+                        485.0
+                    ],
+                    "rotation": 0.0
+                }
+            }
+        },
+        {
+            "entityType": "GoalFlag",
+            "initialParams": {
+                "drawPriority": 1,
+                "physics": {
+                    "coeffAirFriction": 1.0,
+                    "gravityScale": 0.0,
+                    "mass": 1.0
+                },
+                "transform": {
+                    "position": [
+                        272.0,
+                        496.0
+                    ],
+                    "rotation": 0.0
+                }
+            }
+        },
+        {
+            "entityType": "RectangleBlock",
+            "initialParams": {
+                "blockId": 1,
+                "drawPriority": 0,
+                "horizontalFlip": false,
+                "physics": {
+                    "coeffAirFriction": 0.0,
+                    "gravityScale": 0.0,
+                    "mass": 1.0
+                },
+                "tileCount": [
+                    10,
+                    2
+                ],
+                "transform": {
+                    "position": [
+                        160.0,
+                        544.0
+                    ],
+                    "rotation": 0.0
+                }
+            }
+        }
+    ],
+    "bgLayerId": 10,
+    "bgmId": 1,
+    "description": "",
+    "stageHeight": 1,
+    "stageId": "",
+    "stageLengthTiles": 250,
+    "stageName": "新規ステージ",
+    "timeLimit": 100
+}

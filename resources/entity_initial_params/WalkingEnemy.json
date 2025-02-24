@@ -1,0 +1,20 @@
+{
+    "drawPriority": 1,
+    "lookRight": true,
+    "maxHp": 50,
+    "maxWalkSpeed": 100,
+    "maxFlySpeed": 200,
+    "playerHitDamage":50,
+    "physics": {
+        "coeffAirFriction": 1.0,
+        "gravityScale": 1.0,
+        "mass": 1.0
+    },
+    "transform": {
+        "position": [
+            0.0,
+            0.0
+        ],
+        "rotation": 0.0
+    }
+}
